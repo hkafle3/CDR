@@ -1,6 +1,5 @@
 """
-CDR — Credit Default Risk Model
-Step 3: Batch Risk Scoring (Business-Facing Output)
+Batch Risk Scoring 
 
 Unlike a consumer-facing tool, CDR's real output is a scored, ranked list of
 applicants for a risk/underwriting team to act on -- not a single result for

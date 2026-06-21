@@ -1,13 +1,11 @@
 """
-CDR — Credit Default Risk Model
-Step 1: SQL Data Layer
+SQL Data Layer
 
 Loads the UCI Credit Card dataset into a SQLite database and performs the
 core EDA / feature engineering aggregations as actual SQL queries, rather
-than purely in pandas. This is the layer that makes "SQL" in the project's
-tech stack a real, substantive part of the pipeline, not just a label.
+than purely in pandas. 
 
-The dataset: 30,000 credit card clients, demographic info, 6 months of
+The dataset contains 30,000 credit card clients, demographic info, 6 months of
 payment status / bill amount / payment amount history, and a binary target
 (did this client default on their next payment).
 """
@@ -17,7 +15,6 @@ import pandas as pd
 
 CSV_PATH = "UCI_Credit_Card.csv"
 DB_PATH = "cdr.db"
-
 
 def load_csv_into_sql(conn):
     df = pd.read_csv(CSV_PATH)

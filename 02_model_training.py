@@ -1,6 +1,5 @@
 """
-CDR — Credit Default Risk Model
-Step 2: Model Training & Evaluation
+Model Training & Evaluation
 
 Trains a logistic regression classifier on the SQL-sourced feature table
 (from 01_sql_data_layer.py) to predict probability of credit card default.
